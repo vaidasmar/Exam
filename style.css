@@ -18,7 +18,7 @@ body {
   margin: 5px;
   width: 30px;
 }
-.header_burger_menu{
+.header_burger_menu {
   cursor: pointer;
   position: fixed;
   left: 280px;
@@ -32,7 +32,6 @@ header {
 main {
   display: flex;
   margin-left: 20px;
-
 }
 .main_text_left {
   position: absolute;
@@ -79,13 +78,14 @@ button {
   border-radius: 30px;
   background-color: white;
   border-style: none;
-  border:  1px solid  transparent;
+  border: 1px solid transparent;
   padding: 2px;
   border-radius: 30px;
-  background-image: linear-gradient(white, white), 
-                    linear-gradient(to right, rgb(240, 9, 9), gold);
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, rgb(240, 9, 9), gold);
   background-origin: border-box;
   background-clip: content-box, border-box;
+  cursor: pointer;
 }
 
 .first_section {
@@ -101,8 +101,8 @@ button {
   font-weight: 400;
   width: 66%;
 }
-.first_section h3{
-  width: 66%
+.first_section h3 {
+  width: 66%;
 }
 .logos_section {
   display: flex;
@@ -111,7 +111,7 @@ button {
   margin: 20px;
   width: 290px;
 }
-.logos_section img{
+.logos_section img {
   width: 130px;
 }
 .mobil_logo {
@@ -132,8 +132,8 @@ table {
   display: flex;
 }
 .auction_section_selection {
-  width: 290px;
   margin: 20px;
+  width: 290px;
 }
 .auction_section_header_text_left {
   color: #ff8139;
@@ -173,8 +173,8 @@ table {
   text-align: right;
 }
 .auction_section_bottom_header_right img {
-  width: 8px;
   padding-right: 5px;
+  width: 8px;
 }
 hr {
   color: rgb(235, 235, 235);
@@ -183,7 +183,7 @@ hr {
   display: flex;
   margin-left: 20px;
 }
-.bottom_section_image{
+.bottom_section_image {
   margin-top: 100px;
 }
 footer {
@@ -226,10 +226,98 @@ footer nav a {
   padding-top: 10px;
 }
 .footer_copyright {
-  display: flex;
   color: #999999;
+  display: flex;
   justify-content: space-between;
 }
 .footer_copyright_right {
   display: none;
+}
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 1100px;
+    margin: 20px auto;
+  }
+  main {
+    display: flex;
+    margin-left: 20px;
+  }
+  .main_text_left {
+    margin-top: 80px;
+    position: relative;
+    width: 50%;
+  }
+  main div img {
+    height: 500px;
+  }
+  .header_burger_menu {
+    display: none;
+  }
+  header nav {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+  }
+  header nav a {
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  header nav a:last-child {
+    color: #ff3998;
+  }
+  .first_section {
+    background-image: url(/assets/background.svg);
+    background-position: center;
+    border-radius: 20px;
+    padding: 50px 20px 20px 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .logos_section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 100%;
+  }
+  .logos_section img {
+    width: 180px;
+  }
+  .mobil_logo {
+    display: inline;
+  }
+  .auction_section_selection img {
+    width: 250px;
+  }
+  .auction_section_bottom_header_right img {
+    width: 8px;
+    padding-right: 5px;
+  }
+  .auction_section_bottom {
+    width: 250px;
+  }
+  table {
+    padding: 0px 20px 20px 20px;
+    width: 250px;
+  }
+  .bottom_section {
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+  }
+  .footer_display {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .footer_menu {
+    display: flex;
+    gap: 50px;
+  }
+  .footer_copyright_right {
+    display: inline;
+  }
 }
