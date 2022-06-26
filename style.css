@@ -8,8 +8,8 @@ body {
   font-family: "inter";
   margin: 0 auto;
   width: 100%;
+  min-width: 400px;
 }
-
 .burger_menu {
   background-color: #999999;
   border-radius: 5px;
@@ -18,6 +18,12 @@ body {
   margin: 5px;
   width: 30px;
 }
+.header_burger_menu{
+  cursor: pointer;
+  position: fixed;
+  left: 280px;
+  z-index: 99;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -25,10 +31,18 @@ header {
 }
 main {
   display: flex;
-  margin-left: 30px;
+  margin-left: 20px;
+
+}
+.main_text_left {
+  position: absolute;
+  width: 200px;
+  margin-top: 80px;
 }
 main div img {
   height: 400px;
+  position: relative;
+  left: 100px;
 }
 h1 {
   color: #111111;
@@ -40,8 +54,9 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: -10px;
+  width: 66%;
 }
-h3{
+h3 {
   color: #555555;
   font-size: 16px;
   font-weight: 700;
@@ -57,30 +72,47 @@ nav {
 }
 button {
   width: 126px;
-  height: 45px;
+  height: 49px;
   text-align: center;
   font-weight: 600;
+  color: #111111;
   border-radius: 30px;
-  border-image: url(/assets/background.svg) 50;
   background-color: white;
-  padding: 10px;
+  border-style: none;
+  border:  1px solid  transparent;
+  padding: 2px;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, rgb(240, 9, 9), gold);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
+
 .first_section {
   background-image: url(/assets/background.svg);
-  background-position: 560px;
+  background-position: center;
   padding: 50px 20px 20px 20px;
-  margin-top: 60px;
+  margin-top: 200px;
+  width: 100%;
 }
 .first_section p {
   color: #111111;
   font-size: 20px;
   font-weight: 400;
+  width: 66%;
+}
+.first_section h3{
+  width: 66%
 }
 .logos_section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 20px;
+  width: 290px;
+}
+.logos_section img{
+  width: 130px;
 }
 .mobil_logo {
   display: none;
@@ -151,50 +183,53 @@ hr {
   display: flex;
   margin-left: 20px;
 }
+.bottom_section_image{
+  margin-top: 100px;
+}
 footer {
   margin-left: 20px;
   margin-top: 60px;
 }
-footer nav { 
+footer nav {
   display: flex;
-} 
+}
 footer nav a {
   color: #999999;
   padding-right: 10px;
   text-decoration: none;
-  }
-.footer_menu{
+}
+.footer_menu {
   display: block;
   margin-bottom: 50px;
 }
-.footer_menu nav{
+.footer_menu nav {
   display: block;
 }
-.footer_menu_top{
+.footer_menu_top {
   display: flex;
   gap: 100px;
   margin-top: 50px;
 }
-.footer_menu_top a{
+.footer_menu_top a {
   display: block;
   font-size: 16px;
   padding-top: 10px;
 }
-.footer_menu_bottom{
+.footer_menu_bottom {
   display: flex;
   gap: 80px;
   margin-top: 50px;
 }
-.footer_menu_bottom a{
+.footer_menu_bottom a {
   display: block;
   font-size: 16px;
   padding-top: 10px;
 }
-.footer_copyright{
+.footer_copyright {
   display: flex;
   color: #999999;
   justify-content: space-between;
 }
-.footer_copyright_right{
+.footer_copyright_right {
   display: none;
 }
